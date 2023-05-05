@@ -36,6 +36,8 @@ This is similar what we could do in class component of `componentDidMount()`
 `Second`
 when there is dependency provided in the array
 
+
+
 ```javascript
  useEffect(() => {
    console.log('code runs | function executing etc')
@@ -50,6 +52,8 @@ if there is changing in dependency1 or dependency2 (comparing it pre and new val
 ##  What we can do with useEffect
 
 Three major benenfits of useeffect
+
+
 1.`Fetching data from an API:`
 
 ```javascript
@@ -93,7 +97,7 @@ function MyComponent() {
 }
 ```
 
-.` Subscribing to events:`
+3. ` Subscribing to events:`
 
 ```javascript
 import { useState, useEffect } from 'react';
@@ -122,9 +126,10 @@ function MyComponent() {
 ```
 
 
+
+
 ##  How useEffect handle The life cycle of the react component
 ans:
-
 The useEffect hook is a powerful feature of React that allows functional components to manage their lifecycle and handle side effects. It provides an easy way to execute code in response to changes in the component, such as updates to the state or props.
 
 In terms of the component lifecycle, the useEffect hook can be used to replace several lifecycle methods, such as componentDidMount, componentDidUpdate, and componentWillUnmount, all in a single function.
@@ -137,13 +142,21 @@ Overall, the useEffect hook is a powerful tool for managing the lifecycle of a f
 
 
 
-##  Why useEffect after component render | re render 
+
+
+
+##  Why useEffect  run after component render | re render 
 
 1. useEffect is designed to run after the component has rendered because it allows you to perform side effects after the browser has painted the initial screen. This is important because performing side effects during the rendering process can block the browser's rendering engine, resulting in a slow and unresponsive user interface.
 
 2By running useEffect after the component has rendered, React ensures that your component's rendering process is fast and efficient, while still allowing you to perform any necessary side effects. This makes it possible to build complex user interfaces that respond quickly and smoothly to user interactions.
 
 3. Additionally, running useEffect after the component has rendered allows you to access and manipulate the component's DOM elements, which may not be available during the initial rendering process. This is useful for setting up event listeners, updating the document title, or performing any other side effect that requires access to the DOM.
+
+
+
+
+
 
 
 
