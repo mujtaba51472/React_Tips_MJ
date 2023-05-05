@@ -52,7 +52,7 @@ if there is changing in dependency1 or dependency2 (comparing it pre and new val
 Three major benenfits of useeffect
 1.`Fetching data from an API:`
 
-```jaavsrvipt
+```javascript
 import { useState, useEffect } from 'react';
 
 function MyComponent() {
