@@ -173,7 +173,7 @@ Overall, the useEffect hook is a powerful tool for managing the lifecycle of a f
   }, [i]);
 ```
 `explanation`: 
-In the code you provided, i is declared and initialized with a value of 5.
+In the code provided, i is declared and initialized with a value of 5.
 
 Then, a useEffect hook is used with a dependency array containing only i. This means that the effect function will be called after the initial render, and then again whenever the value of i changes.
 
